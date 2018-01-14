@@ -1,5 +1,5 @@
 # IMAGE PROCESSING
-Document sources: https://docs.opencv.org/master/d7/da8/tutorial_table_of_content_imgproc.html
+Document source: https://docs.opencv.org/master/d7/da8/tutorial_table_of_content_imgproc.html
 
 A_SmoothingImages: 
 	- Smoothing Images
@@ -26,3 +26,19 @@ G_Border
 
 H_SobelDerivatives
 	- Sobel Derivatives
+
+I_Laplace
+	- Laplace Operator
+
+J_CannyEdge
+	- Canny Edge Detector
+
+K_HoughLine
+	- Hough Line Transform
+
+L_HoughCircle 
+	- Hough Circle Transform
+
+
+
+
