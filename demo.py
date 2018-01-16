@@ -12,16 +12,15 @@ import numpy as numpy
 # import J_CannyEdge as J
 # import K_HoughLine as K
 # import L_HoughCircle as L 
-# import M_Remapping as M
-import N_HistogramEqualization as N
+# import N_Affine as N
+import P_HistogramCalculation as P
 
 def run() :
 
 	img = cv2.imread('sample.jpg')
-	gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-	result = N.histogram(gray)
 
-	cv2.imshow('result', result)
+	P.drawHistogram(img)
+
 	cv2.waitKey(0)
 
 run()
