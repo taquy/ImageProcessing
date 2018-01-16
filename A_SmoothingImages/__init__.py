@@ -1,10 +1,6 @@
 import cv2
 import numpy as np
 
-
-
-
-
 def blur (img, kernel) :
 	# dst = cv.blur( src, ksize[, dst[, anchor[, borderType]]] )
 
