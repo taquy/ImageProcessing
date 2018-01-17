@@ -1,6 +1,8 @@
 import cv2
 import numpy as np
 
+
+
 def blur (img, kernel) :
 	# dst = cv.blur( src, ksize[, dst[, anchor[, borderType]]] )
 
@@ -29,8 +31,8 @@ def bilateralFilter (img, diameter, sigmaColor, sigmaSpace) :
 	# src: Source image
 	# dst: Destination image
 	# d: The diameter of each pixel neighborhood.
-	# σColor: Standard deviation in the color space.
-	# σSpace: Standard deviation in the coordinate space (in pixel terms)
+	# Color: Standard deviation in the color space.
+	# Space: Standard deviation in the coordinate space (in pixel terms)
 
 	blur = cv2.bilateralFilter(img, diameter, sigmaColor, sigmaSpace)
 	return blur
@@ -40,9 +42,11 @@ def gaussianBlur (img, kernel, sigmaX) :
 	# dst	=	cv.GaussianBlur(	src, ksize, sigmaX[, dst[, sigmaY[, borderType]]]	)
 	
 	# dst: Destination image
-	# Size(w, h): The size of the kernel to be used (the neighbors to be considered). w and h have to be odd and positive numbers otherwise thi size will be calculated using the σx and σy arguments.
-	# σx: The standard deviation in x. Writing 0 implies that σx is calculated using kernel size.
-	# σy: The standard deviation in y. Writing 0 implies that σy is calculated using kernel size.
+	# Size(w, h): The size of the kernel to be used (the neighbors to be considered). 
+	# w and h have to be odd and positive numbers otherwise thi size will be calculated using the x and y arguments.
+
+	# x: The standard deviation in x. Writing 0 implies that x is calculated using kernel size.
+	# y: The standard deviation in y. Writing 0 implies that y is calculated using kernel size.
 
 	blur = cv.GaussianBlur(img, kernel, sigmaX)
 	return blur

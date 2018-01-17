@@ -12,4 +12,3 @@ import numpy as np
 def histogram(img) :
 	img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 	return cv2.equalizeHist(img)
-
