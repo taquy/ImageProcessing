@@ -14,7 +14,8 @@ import numpy as numpy
 # import L_HoughCircle as L 
 # import N_Affine as N
 # import P_HistogramCalculation as P
-import S_TemplateMatching as S
+# import S_TemplateMatching as S
+import T_FindContour as T
 
 # def run() :
 #
@@ -26,7 +27,12 @@ import S_TemplateMatching as S
 #
 # run()
 
-S.templateMatching(
-	'./S_TemplateMatching/origin_1.jpg',
-	'./S_TemplateMatching/template_1.png'
-)
+# S.templateMatching(
+# 	'./S_TemplateMatching/origin_1.jpg',
+# 	'./S_TemplateMatching/template_1.png'
+# )
+
+img = T.findContours('sample.jpg')
+cv2.namedWindow('Result', cv2.WINDOW_AUTOSIZE)
+cv2.imshow('Result', img)
+cv2.waitKey(0)
