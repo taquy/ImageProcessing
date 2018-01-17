@@ -61,3 +61,6 @@ O_HistogramEqualization
 	# improve the contrast
 	- Histogram Equalization
 
+Q_HistogramComparison
+	# calculate metrics between histograms
+	- Histogram Comparison
