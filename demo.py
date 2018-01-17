@@ -13,14 +13,20 @@ import numpy as numpy
 # import K_HoughLine as K
 # import L_HoughCircle as L 
 # import N_Affine as N
-import P_HistogramCalculation as P
+# import P_HistogramCalculation as P
+import S_TemplateMatching as S
 
-def run() :
+# def run() :
+#
+# 	img = cv2.imread('sample.jpg')
+#
+# 	P.drawHistogram(img)
+#
+# 	cv2.waitKey(0)
+#
+# run()
 
-	img = cv2.imread('sample.jpg')
-
-	P.drawHistogram(img)
-
-	cv2.waitKey(0)
-
-run()
+S.templateMatching(
+	'./S_TemplateMatching/origin_1.jpg',
+	'./S_TemplateMatching/template_1.png'
+)
