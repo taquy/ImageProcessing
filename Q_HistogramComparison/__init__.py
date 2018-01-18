@@ -1,5 +1,7 @@
 # doc
 # https://docs.opencv.org/3.0-beta/modules/imgproc/doc/histograms.html
+# compare hist: https://www.programcreek.com/python/example/81596/cv2.compareHist
+# this demo: https://www.pyimagesearch.com/2014/07/14/3-ways-compare-histograms-using-opencv-python/
 
 
 # USAGE
