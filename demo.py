@@ -13,26 +13,51 @@ import numpy as numpy
 # import K_HoughLine as K
 # import L_HoughCircle as L 
 # import N_Affine as N
-# import P_HistogramCalculation as P
+# import O_HistogramEqualization as O
+import P_HistogramCalculation as P
+# import Q_HistogramComparison as Q
 # import S_TemplateMatching as S
-import T_FindContour as T
+# import T_FindContour as T
 
-# def run() :
-#
-# 	img = cv2.imread('sample.jpg')
-#
-# 	P.drawHistogram(img)
-#
-# 	cv2.waitKey(0)
-#
-# run()
+def run() :
+
+	img = cv2.imread('sample.jpg')
+
+	# test area
+	w = 300
+	img = cv2.resize(img, (w, w), interpolation = cv2.INTER_CUBIC)
+	# end
+
+	result = P.drawHistogram(img)
+	cv2.imshow('result', result)
+
+	cv2.waitKey(0)
+
+run()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # S.templateMatching(
 # 	'./S_TemplateMatching/origin_1.jpg',
 # 	'./S_TemplateMatching/template_1.png'
 # )
 
-img = T.findContours('sample.jpg')
-cv2.namedWindow('Result', cv2.WINDOW_AUTOSIZE)
-cv2.imshow('Result', img)
-cv2.waitKey(0)
+# img = T.findContours('sample.jpg')
+# cv2.namedWindow('Result', cv2.WINDOW_AUTOSIZE)
+# cv2.imshow('Result', img)
+# cv2.waitKey(0)

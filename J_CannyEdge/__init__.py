@@ -16,16 +16,14 @@ import numpy as np
 # 	int 	apertureSize = 3,
 # 	bool 	L2gradient = false 
 # )		
-
-#
 #
 # image	8-bit input image.
 # edges	output edge map; single channels 8-bit image, which has the same size as image .
 # threshold1	first threshold for the hysteresis procedure.
 # threshold2	second threshold for the hysteresis procedure.
 # apertureSize	aperture size for the Sobel operator.
-# L2gradient	a flag, indicating whether a more accurate L2 norm =(dI/dx)2+(dI/dy)2‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾√ should be used to calculate the image gradient magnitude ( L2gradient=true ), or whether the default L1 norm =|dI/dx|+|dI/dy| is enough ( L2gradient=false ).
+# L2gradient	a flag, indicating whether a more accurate
 
-def canny(img, thres1, thres2) :
-    gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
+def canny(img, thres1 = 125, thres2 = 255) :
+	gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 	return cv2.Canny(gray, thres1, thres2)

@@ -3,7 +3,7 @@ import numpy as np
 
 # doc: https://docs.opencv.org/3.1.0/d4/d13/tutorial_py_filtering.html
 
-def blur (img, kernel) :
+def blur (img, kernel = 5) :
 	# dst = cv.blur( src, ksize[, dst[, anchor[, borderType]]] )
 
 	# src	input image; it can have any number of channels, which are processed independently, but the depth should be CV_8U, CV_16U, CV_16S, CV_32F or CV_64F.
@@ -14,7 +14,7 @@ def blur (img, kernel) :
 
 	return cv2.blur(img, (kernel, kernel))
 
-def medianBlur (img, kernel) :
+def medianBlur (img, kernel = 5) :
 	# dst = cv.medianBlur( src, ksize[, dst] )
 
 	# src: Source image

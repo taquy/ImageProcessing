@@ -12,13 +12,17 @@ def main():
 
 	img = cv2.resize(img, (w, w), interpolation = cv2.INTER_CUBIC)
 
-	labels = ['origin', 'blur', 'median blur', 'bilateral blur', 'gaussian blur', 'box filter']
+	labels = ['THRESH_BINARY', 'THRESH_BINARY_INV', 'THRESH_TRUNC'
+		, 'THRESH_TOZERO', 'THRESH_TOZERO_INV']
 	images = []
 
 
 	# MODULE TESTING
-
-
+	images.append(app.tbin(img))
+	images.append(app.tbinInverted(img))
+	images.append(app.tbinTruncate(img))
+	images.append(app.tbinToZero(img))
+	images.append(app.tbinToZeroInverted(img))
 	## END OF MODULE TESING
 
 	for i in xrange(len(images)) :
