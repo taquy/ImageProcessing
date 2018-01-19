@@ -25,7 +25,7 @@ def main():
 	images.append(app.tbinToZeroInverted(img))
 	## END OF MODULE TESING
 
-	for i in xrange(len(images)) :
+	for i in range(len(images)) :
 		plt.subplot(2,3,i + 1),plt.imshow(images[i])
 		plt.title(labels[i])
 		plt.xticks([]),plt.yticks([])

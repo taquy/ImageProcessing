@@ -69,7 +69,7 @@ def extractLines(img):
 
 verticalImg, horizontalImg = extractLines(cv.imread('demo.png'))
 
-cv.imshow('verticalImg', verticalImg)
-# cv.imshow('horizontal', horizontal)
+# cv.imshow('verticalImg', verticalImg)
+cv.imshow('horizontal', horizontal)
 
 cv.waitKey(0)
