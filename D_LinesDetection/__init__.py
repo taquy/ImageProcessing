@@ -66,10 +66,3 @@ def extractLines(img):
     vertical[rows, cols] = smooth[rows, cols]
 
     return vertical, horizontal;
-
-verticalImg, horizontalImg = extractLines(cv.imread('demo.png'))
-
-cv.imshow('verticalImg', verticalImg)
-# cv.imshow('horizontal', horizontal)
-
-cv.waitKey(0)

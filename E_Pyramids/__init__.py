@@ -9,8 +9,10 @@ import sys
 # Use the OpenCV functions pyrUp() and pyrDown() to downsample or upsample a given image.
 
 def bigger (img, scale = 2) :
+	rows, cols, _channels = map(int, img.shape)
 	return cv2.pyrUp(img, dstsize = (scale * cols, scale * rows))
 
 def smaller (img, scale = 2) :
+	rows, cols, _channels = map(int, img.shape)
 	return cv2.pyrDown(img, dstsize = (cols // scale, rows // scale))
 
