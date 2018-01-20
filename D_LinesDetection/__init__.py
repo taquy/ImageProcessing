@@ -1,7 +1,4 @@
-"""
-@file morph_lines_detection.py
-@brief Use morphology transformations for extracting horizontal and vertical lines sample code
-"""
+
 import numpy as np
 import sys
 import cv2 as cv
@@ -66,3 +63,10 @@ def extractLines(img):
     vertical[rows, cols] = smooth[rows, cols]
 
     return vertical, horizontal;
+
+# verticalImg, horizontalImg = extractLines(cv.imread('demo.png'))
+
+# cv.imshow('verticalImg', verticalImg)
+# cv.imshow('horizontal', horizontal)
+
+# cv.waitKey(0)

@@ -13,3 +13,11 @@ def display(images, labels, rows = 2, cols = 2):
 	
 	plt.show()
 
+def readMatrix(fp) :
+	lines = list(fp)
+	matrix = []
+	for line in lines:
+		line = line.replace('\n', '')
+		line = line.split('\t')
+		matrix.append(map(float, line))
+	return matrix

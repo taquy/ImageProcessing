@@ -32,7 +32,7 @@ def main():
 
 	h = 0
 	v = 0
-	for i in xrange(len(images)) :
+	for i in range(len(images)) :
 		cv2.namedWindow(labels[i]);
 
 		x =  (w + 20) * h
