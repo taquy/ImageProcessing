@@ -6,17 +6,8 @@ from matplotlib.ticker import MaxNLocator
 from collections import namedtuple
 
 
-def bar (n_groups, A, B) :
-	# n_groups = 4
-	# print A
-	# print B
-
-	# A = (90, 55, 40, 65)
-	# B = (85, 62, 54, 20)
-	# print A
-	# print B
-	# return
-	# create plot
+def bar (n_groups, A, B, fg = 1) :
+	plt.figure(fg)
 	fig, ax = plt.subplots()
 	index = np.arange(n_groups)
 	bar_width = 0.35
@@ -27,14 +18,11 @@ def bar (n_groups, A, B) :
 	plt.xticks(index + bar_width / 2, ('A', 'B', 'C', 'D'))
 	 
 	plt.tight_layout()
-	plt.show()
 
-def line (X, Ys) :
-
+def line (X, Ys, fg = 1) :
+	plt.figure(fg)
 	# X = [1,2,3,4,5,6]
 	# Y = [2,5,4,3,7,9]
 	# Y2 = [1,3,1,2,3,9]
 	for Y in Ys :
 		plt.plot(X, Y)
-
-	plt.show()

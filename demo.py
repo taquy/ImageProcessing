@@ -1,6 +1,7 @@
 import cv2
 import numpy as numpy
 import math
+from matplotlib import pyplot as plt
 
 import A_SmoothingImages as A
 import B_ErodeDialation as B
@@ -33,7 +34,7 @@ def work1 () :
 		cv2.imread('_sampletest/exam1/board.png'),
 		cv2.imread('_sampletest/exam1/sinusoidal.png')
 	]
-	io.display(images, labels)
+	io.display(images, labels, 1)
 
 def work2() :
 	ci = io.readMatrix(open('_sampletest/exam1/CI.txt'))
@@ -65,7 +66,7 @@ def work2() :
 
 	groupA = (Ux[0], Uy[0], Ox[0], Oy[0])
 	groupB = (Ux[1], Uy[1], Ox[1], Oy[1])
-	# graph.bar(4, groupA, groupB)
+	graph.bar(4, groupA, groupB, 1)
 
 	return groupA, groupB, ci, cj
 
@@ -89,14 +90,14 @@ def work3(A, B, ci, cj):
 		[x1[0], x2[0], x3[0]],
 		[x1[1], x2[1], x3[1]]
 	]
-	graph.line([1,2,3], Ys)
+	graph.line([1,2,3], Ys, 3)
 
 
 if __name__== '__main__':
-	# work1()
+	work1()
 	A, B, ci, cj = work2()
 	work3(A, B, ci, cj)
-
+	plt.show()
 
 
 
