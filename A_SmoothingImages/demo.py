@@ -7,7 +7,6 @@ import __init__ as app
 def main():
 	img = cv2.imread('../sample.jpg')
 	img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-
 	w = 300
 
 	img = cv2.resize(img, (w, w), interpolation = cv2.INTER_CUBIC)
@@ -18,6 +17,11 @@ def main():
 
 	# MODULE TESTING
 
+	images.append(img)
+	images.append(app.blur(img, 15))
+	images.append(app.medianBlur(img, 15))
+	images.append(app.bilateralFilter(img, 15, 90, 90))
+	images.append(app.gaussianBlur(img, 15, 0))
 
 	## END OF MODULE TESING
 

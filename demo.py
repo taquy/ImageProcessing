@@ -1,5 +1,5 @@
 import cv2
-import numpy as numpy
+import numpy as np
 import math
 from matplotlib import pyplot as plt
 
@@ -39,6 +39,24 @@ def work1 () :
 def work2() :
 	ci = io.readMatrix(open('_sampletest/exam1/CI.txt'))
 	cj = io.readMatrix(open('_sampletest/exam1/CJ.txt'))
+	ci = np.asarray(ci)
+	cj = np.asarray(cj)
+
+	mat = [
+		[1,1,1],
+		[2,2,2],
+		[3,3,3]
+	]
+
+	print sum(mat[0\1])
+
+	Ux = [0,0]
+	Uy = [0,0]
+	Ox = [0,0]
+	Oy = [0,0]
+
+	# for i in range (1, len(ci)) :
+	# 	Ux[0] = 
 
 	# calculate Ux
 	Ux = [0, 0]
@@ -66,9 +84,10 @@ def work2() :
 
 	groupA = (Ux[0], Uy[0], Ox[0], Oy[0])
 	groupB = (Ux[1], Uy[1], Ox[1], Oy[1])
-	graph.bar(4, groupA, groupB, 1)
+	graph.bar(4, groupA, groupB)
 
 	return groupA, groupB, ci, cj
+
 
 def work3(A, B, ci, cj):
 	x1 = [0, 0]
@@ -94,9 +113,10 @@ def work3(A, B, ci, cj):
 
 
 if __name__== '__main__':
-	work1()
-	A, B, ci, cj = work2()
-	work3(A, B, ci, cj)
+	# work1()
+	# A, B, ci, cj = work2()
+	work2()
+	# work3(A, B, ci, cj)
 	plt.show()
 
 

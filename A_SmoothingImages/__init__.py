@@ -23,7 +23,7 @@ def medianBlur (img, kernel = 5) :
 
 	return cv2.medianBlur(img, kernel)
 
-def bilateralFilter (img, diameter, sigmaColor, sigmaSpace) :
+def bilateralFilter (img, diameter = 5, sigmaColor = 20, sigmaSpace = 20) :
 	# dst	=	cv.bilateralFilter(	src, d, sigmaColor, sigmaSpace[, dst[, borderType]]	)
 
 	# src: Source image
@@ -35,7 +35,7 @@ def bilateralFilter (img, diameter, sigmaColor, sigmaSpace) :
 	return cv2.bilateralFilter(img, diameter, sigmaColor, sigmaSpace)
 
 
-def gaussianBlur (img, kernel, sigmaX) :
+def gaussianBlur (img, kernel = 5, sigmaX = 20) :
 	# dst	=	cv.GaussianBlur(	src, ksize, sigmaX[, dst[, sigmaY[, borderType]]]	)
 	
 	# dst: Destination image
@@ -45,7 +45,7 @@ def gaussianBlur (img, kernel, sigmaX) :
 	# x: The standard deviation in x. Writing 0 implies that x is calculated using kernel size.
 	# y: The standard deviation in y. Writing 0 implies that y is calculated using kernel size.
 
-	return cv2.GaussianBlur(img, kernel, sigmaX)
+	return cv2.GaussianBlur(img, (kernel, kernel), sigmaX)
 
-def boxFilter (img, depth, kernel) :
-	return cv2.boxFilter(img, depth, kernel)
+def boxFilter (img, depth = 3, kernel = 5) :
+	return cv2.boxFilter(img, depth, (kernel, kernel))
