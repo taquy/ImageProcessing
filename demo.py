@@ -23,8 +23,10 @@ import S_TemplateMatching as S
 import T_FindContour as T
 
 import _IO as io
+from _IO import VideoReader
 import _MATRIX as mat
 import _GRAPH as graph
+import _MISC as misc
 
 
 
@@ -105,11 +107,14 @@ def work3(A, B, ci, cj):
 
 
 if __name__== '__main__':
-	work1()
-	A, B, ci, cj = work2()
+	reader = VideoReader(path='sample.webm', size=(1920, 1080), out_path='test_out.mp4')
+	reader.display()
+	print(reader.fps)
+	# work1()
+	# A, B, ci, cj = work2()
 	# work2()
-	work3(A, B, ci, cj)
-	plt.show()
+	# work3(A, B, ci, cj)
+	# plt.show()
 
 
 
