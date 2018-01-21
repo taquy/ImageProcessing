@@ -42,14 +42,6 @@ def work2() :
 	ci = np.asarray(ci)
 	cj = np.asarray(cj)
 
-	# calculate Ux
-	
-	# mtx = [
-	# 	[1,2,1],
-	# 	[2,2,2],
-	# 	[3,3,3]
-	# ]
-
 	m = len(ci)
 
 	UxI = 0
@@ -67,19 +59,14 @@ def work2() :
 	for j in range (1, m + 1) :
 		UxI += j * sum (ci[j - 1])
 		UxJ += j * sum (cj[j - 1])
-
-	print UxI
-	for i in range (1, m + 1) :
-		UyI += i * mat.sumCol(ci, i - 1)
-		UyJ += i * mat.sumCol(cj, i - 1)
+		UyI += j * mat.sumCol(ci, j - 1)
+		UyJ += j * mat.sumCol(cj, j - 1)
 
 	for j in range (1, m + 1) :
 		OxI += math.pow((j - UxI), 2) *  sum (ci[j - 1])
 		OxJ += math.pow((j - UxJ), 2) *  sum (cj[j - 1])
-
-	for i in range (1, m + 1) :
-		OyI += math.pow((i - UyI), 2) *  mat.sumCol (ci, i - 1)
-		OyJ += math.pow((i - UyJ), 2) *  mat.sumCol (cj, i - 1)
+		OyI += math.pow((j - UyI), 2) *  mat.sumCol (ci, j - 1)
+		OyJ += math.pow((j - UyJ), 2) *  mat.sumCol (cj, j - 1)
 
 	OxI = math.sqrt(OxI)
 	OxJ = math.sqrt(OxJ)
