@@ -42,68 +42,73 @@ def work2() :
 	ci = np.asarray(ci)
 	cj = np.asarray(cj)
 
-	mat = [
-		[1,1,1],
-		[2,2,2],
-		[3,3,3]
-	]
-
-	print sum(mat[0\1])
-
-	Ux = [0,0]
-	Uy = [0,0]
-	Ox = [0,0]
-	Oy = [0,0]
-
-	# for i in range (1, len(ci)) :
-	# 	Ux[0] = 
-
 	# calculate Ux
-	Ux = [0, 0]
-	Uy = [0, 0]
-	Ox = [0, 0]
-	Oy = [0, 0]
+	
+	# mtx = [
+	# 	[1,2,1],
+	# 	[2,2,2],
+	# 	[3,3,3]
+	# ]
 
-	for j in range (1, len(ci)) :
-		Ux[0] += j * sum(ci[j])
-		Uy[0] += j * mat.sumCol(ci, j)
-		Ox[0] += math.pow(j - Ux[0], 2) * sum(ci[j])
-		Oy[0] += math.pow(j - Uy[0], 2) * mat.sumCol(ci, j)
+	m = len(ci)
 
-	Ox[0] = math.sqrt(Ox[0])
-	Oy[0] = math.sqrt(Oy[0])
+	UxI = 0
+	UxJ = 0
 
-	for j in range (1, len(cj)) :
-		Ux[1] += j * sum(cj[j])
-		Uy[1] += j * mat.sumCol(cj, j)
-		Ox[1] += math.pow(j - Ux[1], 2) * sum(cj[j])
-		Oy[1] += math.pow(j - Uy[1], 2) * mat.sumCol(cj, j)
+	UyI = 0
+	UyJ = 0
 
-	Ox[1] = math.sqrt(Ox[1])
-	Oy[1] = math.sqrt(Oy[1])
+	OxI = 0
+	OxJ = 0
 
-	groupA = (Ux[0], Uy[0], Ox[0], Oy[0])
-	groupB = (Ux[1], Uy[1], Ox[1], Oy[1])
-	graph.bar(4, groupA, groupB)
+	OyI = 0
+	OyJ = 0
 
-	return groupA, groupB, ci, cj
+	for j in range (1, m + 1) :
+		UxI += j * sum (ci[j - 1])
+		UxJ += j * sum (cj[j - 1])
 
+	print UxI
+	for i in range (1, m + 1) :
+		UyI += i * mat.sumCol(ci, i - 1)
+		UyJ += i * mat.sumCol(cj, i - 1)
+
+	for j in range (1, m + 1) :
+		OxI += math.pow((j - UxI), 2) *  sum (ci[j - 1])
+		OxJ += math.pow((j - UxJ), 2) *  sum (cj[j - 1])
+
+	for i in range (1, m + 1) :
+		OyI += math.pow((i - UyI), 2) *  mat.sumCol (ci, i - 1)
+		OyJ += math.pow((i - UyJ), 2) *  mat.sumCol (cj, i - 1)
+
+	OxI = math.sqrt(OxI)
+	OxJ = math.sqrt(OxJ)
+
+	OyI = math.sqrt(OyI)
+	OyJ = math.sqrt(OyJ)
+
+	A = [UxI, UyI, OxI, OyI]
+	B = [UxJ, UyJ, OxJ, OyJ]
+	
+	graph.bar(4, A, B)
+
+	return A, B, ci, cj
 
 def work3(A, B, ci, cj):
 	x1 = [0, 0]
 	x2 = [0, 0]
 	x3 = [0, 0]
 
-	for i in range (1, len(ci)) :
-		for j in range (1, len(ci)) :
-			x1[0] += math.pow(ci[i][j], 2)
-			x1[1] += math.pow(cj[i][j], 2)
+	for i in range (1, len(ci) + 1) :
+		for j in range (1, len(ci) + 1) :
+			x1[0] += math.pow(ci[i - 1][j - 1], 2)
+			x1[1] += math.pow(cj[i - 1][j - 1], 2)
 
-			x2[0] += math.pow(i - j, 2) * ci[i][j]
-			x2[1] += math.pow(i - j, 2) * cj[i][j]
+			x2[0] += math.pow(i - j, 2) * ci[i - 1][j - 1]
+			x2[1] += math.pow(i - j, 2) * cj[i - 1][j - 1]
 
-			x3[0] += ((i - A[0]) * (i - A[1]) * ci[i][j]) / (A[2] * A[3])
-			x3[1] += ((i - B[0]) * (i - B[1]) * cj[i][j]) / (B[2] * B[3])
+			x3[0] += ((i - A[0]) * (j - A[1]) * ci[i - 1][j - 1]) / (A[2] * A[3])
+			x3[1] += ((i - B[0]) * (j - B[1]) * cj[i - 1][j - 1]) / (B[2] * B[3])
 
 	Ys = [
 		[x1[0], x2[0], x3[0]],
@@ -113,10 +118,10 @@ def work3(A, B, ci, cj):
 
 
 if __name__== '__main__':
-	# work1()
-	# A, B, ci, cj = work2()
-	work2()
-	# work3(A, B, ci, cj)
+	work1()
+	A, B, ci, cj = work2()
+	# work2()
+	work3(A, B, ci, cj)
 	plt.show()
 
 
