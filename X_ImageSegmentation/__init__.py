@@ -36,7 +36,7 @@ def imageSegmentation():
         plt.subplot(2, 3, i + 1), plt.imshow(images[i], 'gray')
         plt.title(titles[i])
         plt.xticks([]), plt.yticks([])
-    plt.show()
+    plt.savefig('output.png')
 
     # cv.waitKey(0)
 

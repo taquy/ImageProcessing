@@ -19,7 +19,7 @@ def ycb (img) :
 # inrange: lowerhsv + upperhsv
 def filter (img, lower, upper) :
 	img = hsv(img)
-	return cv.inRange(img, lower, upper)
+	return cv2.inRange(img, lower, upper)
 
 # combine / image blending: https://docs.opencv.org/3.2.0/d0/d86/tutorial_py_image_arithmetics.html
 # addWeight: image1, opacity1, image2, opacity2

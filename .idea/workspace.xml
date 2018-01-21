@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a5ab6da7-2293-4b12-ab9c-a1c2e5caacc3" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/X_ImageSegmentation/__init__.py" afterPath="$PROJECT_DIR$/X_ImageSegmentation/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/_MISC/__init__.py" afterPath="$PROJECT_DIR$/_MISC/__init__.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,8 +18,8 @@
       <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Y_GrabCut/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+            <state relative-caret-position="324">
+              <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
               </folding>
@@ -26,10 +28,42 @@
         </entry>
       </file>
       <file leaf-file-name="__init__.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Z_BGSubtraction/__init__.py">
+        <entry file="file://$PROJECT_DIR$/_MISC/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+            <state relative-caret-position="169">
+              <caret line="23" column="17" lean-forward="true" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_IO/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="789">
+              <caret line="54" column="20" lean-forward="true" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="demo.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/A_SmoothingImages/demo.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="39" column="19" lean-forward="false" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/S_TemplateMatching/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="925">
+              <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -58,7 +92,6 @@
         <option value="$PROJECT_DIR$/G_Border/__init__.py" />
         <option value="$PROJECT_DIR$/S_TemplateMatching/__init__.py" />
         <option value="$PROJECT_DIR$/T_FindContour/__init__.py" />
-        <option value="$PROJECT_DIR$/X_ImageSegmentation/__init__.py" />
         <option value="$PROJECT_DIR$/F_Thresholding/demo.py" />
         <option value="$PROJECT_DIR$/A_SmoothingImages/demo.py" />
         <option value="$PROJECT_DIR$/B_ErodeDialatation/demo.py" />
@@ -66,6 +99,8 @@
         <option value="$PROJECT_DIR$/demo.py" />
         <option value="$PROJECT_DIR$/Y_GrabCut/__init__.py" />
         <option value="$PROJECT_DIR$/Z_BGSubtraction/__init__.py" />
+        <option value="$PROJECT_DIR$/X_ImageSegmentation/__init__.py" />
+        <option value="$PROJECT_DIR$/_MISC/__init__.py" />
       </list>
     </option>
   </component>
@@ -105,62 +140,37 @@
             <path>
               <item name="ImageProcessing" type="b2602c69:ProjectViewProjectNode" />
               <item name="ImageProcessing" type="462c0819:PsiDirectoryNode" />
+              <item name="_GRAPH" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ImageProcessing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ImageProcessing" type="462c0819:PsiDirectoryNode" />
+              <item name="_IO" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ImageProcessing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ImageProcessing" type="462c0819:PsiDirectoryNode" />
+              <item name="_MATRIX" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ImageProcessing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ImageProcessing" type="462c0819:PsiDirectoryNode" />
+              <item name="_MISC" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ImageProcessing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ImageProcessing" type="462c0819:PsiDirectoryNode" />
+              <item name="_sample" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ImageProcessing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ImageProcessing" type="462c0819:PsiDirectoryNode" />
+              <item name="_sampletest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ImageProcessing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ImageProcessing" type="462c0819:PsiDirectoryNode" />
               <item name="A_SmoothingImages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ImageProcessing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ImageProcessing" type="462c0819:PsiDirectoryNode" />
-              <item name="B_ErodeDialatation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ImageProcessing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ImageProcessing" type="462c0819:PsiDirectoryNode" />
-              <item name="C_HitMIss" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ImageProcessing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ImageProcessing" type="462c0819:PsiDirectoryNode" />
-              <item name="D_LinesDetection" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ImageProcessing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ImageProcessing" type="462c0819:PsiDirectoryNode" />
-              <item name="E_Pyramids" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ImageProcessing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ImageProcessing" type="462c0819:PsiDirectoryNode" />
-              <item name="F_Thresholding" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ImageProcessing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ImageProcessing" type="462c0819:PsiDirectoryNode" />
-              <item name="G_Border" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ImageProcessing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ImageProcessing" type="462c0819:PsiDirectoryNode" />
-              <item name="H_SobelDerivatives" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ImageProcessing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ImageProcessing" type="462c0819:PsiDirectoryNode" />
-              <item name="I_Laplace" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ImageProcessing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ImageProcessing" type="462c0819:PsiDirectoryNode" />
-              <item name="J_CannyEdge" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ImageProcessing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ImageProcessing" type="462c0819:PsiDirectoryNode" />
-              <item name="K_HoughLine" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ImageProcessing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ImageProcessing" type="462c0819:PsiDirectoryNode" />
-              <item name="L_HoughCircle" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ImageProcessing" type="b2602c69:ProjectViewProjectNode" />
@@ -170,47 +180,7 @@
             <path>
               <item name="ImageProcessing" type="b2602c69:ProjectViewProjectNode" />
               <item name="ImageProcessing" type="462c0819:PsiDirectoryNode" />
-              <item name="N_Affine" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ImageProcessing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ImageProcessing" type="462c0819:PsiDirectoryNode" />
-              <item name="O_HistogramEqualization" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ImageProcessing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ImageProcessing" type="462c0819:PsiDirectoryNode" />
-              <item name="P_HistogramCalculation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ImageProcessing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ImageProcessing" type="462c0819:PsiDirectoryNode" />
-              <item name="Q_HistogramComparison" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ImageProcessing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ImageProcessing" type="462c0819:PsiDirectoryNode" />
-              <item name="S_TemplateMatching" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ImageProcessing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ImageProcessing" type="462c0819:PsiDirectoryNode" />
-              <item name="T_FindContour" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ImageProcessing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ImageProcessing" type="462c0819:PsiDirectoryNode" />
-              <item name="X_ImageSegmentation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ImageProcessing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ImageProcessing" type="462c0819:PsiDirectoryNode" />
               <item name="Y_GrabCut" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ImageProcessing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ImageProcessing" type="462c0819:PsiDirectoryNode" />
-              <item name="Z_BGSubtraction" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -230,7 +200,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.__init__ (1)">
+  <component name="RunManager" selected="Python.__init__">
     <configuration name="__init__ (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -244,6 +214,24 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="ImageProcessing" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Z_BGSubtraction/__init__.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="__init__ (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/X_ImageSegmentation" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ImageProcessing" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/X_ImageSegmentation/__init__.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -267,37 +255,19 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="compare" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="demo (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Q_HistogramComparison" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/A_SmoothingImages" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="ImageProcessing" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Q_HistogramComparison/compare.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="demo (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/N_Affine" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ImageProcessing" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/N_Affine/demo.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/A_SmoothingImages/demo.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -322,19 +292,19 @@
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.compare" />
-      <item index="1" class="java.lang.String" itemvalue="Python.demo (1)" />
-      <item index="2" class="java.lang.String" itemvalue="Python.demo" />
-      <item index="3" class="java.lang.String" itemvalue="Python.__init__" />
-      <item index="4" class="java.lang.String" itemvalue="Python.__init__ (1)" />
+      <item index="0" class="java.lang.String" itemvalue="Python.demo" />
+      <item index="1" class="java.lang.String" itemvalue="Python.__init__" />
+      <item index="2" class="java.lang.String" itemvalue="Python.__init__ (1)" />
+      <item index="3" class="java.lang.String" itemvalue="Python.demo (2)" />
+      <item index="4" class="java.lang.String" itemvalue="Python.__init__ (2)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.__init__ (1)" />
-        <item index="1" class="java.lang.String" itemvalue="Python.__init__" />
-        <item index="2" class="java.lang.String" itemvalue="Python.demo" />
-        <item index="3" class="java.lang.String" itemvalue="Python.demo (1)" />
-        <item index="4" class="java.lang.String" itemvalue="Python.compare" />
+        <item index="0" class="java.lang.String" itemvalue="Python.__init__" />
+        <item index="1" class="java.lang.String" itemvalue="Python.__init__ (2)" />
+        <item index="2" class="java.lang.String" itemvalue="Python.demo (2)" />
+        <item index="3" class="java.lang.String" itemvalue="Python.__init__ (1)" />
+        <item index="4" class="java.lang.String" itemvalue="Python.demo" />
       </list>
     </recent_temporary>
   </component>
@@ -361,7 +331,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17552084" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28709677" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12903225" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -433,7 +403,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/C_HitMIss/__init__.py">
+    <entry file="file://$PROJECT_DIR$/C_HitMiss/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="837">
           <caret line="31" column="22" lean-forward="false" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
@@ -475,13 +445,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/S_TemplateMatching/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-217">
-          <caret line="34" column="25" lean-forward="false" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_sample/images/original_02.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -505,20 +468,6 @@
     <entry file="file://$PROJECT_DIR$/_sample/images/modified_01.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_sample/background_subtraction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-631">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/A_SmoothingImages/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="21" column="24" lean-forward="false" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/T_FindContour/__init__.py">
@@ -556,14 +505,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/A_SmoothingImages/demo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="12" column="58" lean-forward="false" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/C_HitMIss/demo.py">
+    <entry file="file://$PROJECT_DIR$/C_HitMiss/demo.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-610">
           <caret line="10" column="25" lean-forward="false" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
@@ -610,13 +552,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/X_ImageSegmentation/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-157">
-          <caret line="7" column="18" lean-forward="true" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/J_CannyEdge/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-502">
@@ -635,13 +570,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="241">
           <caret line="51" column="16" lean-forward="true" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/M_Remapping/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -673,21 +601,108 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Y_GrabCut/__init__.py">
+    <entry file="file://$PROJECT_DIR$/Z_BGSubtraction/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_MATRIX/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_sample/background_subtraction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/A_SmoothingImages/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-538">
+          <caret line="16" column="14" lean-forward="true" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/X_ImageSegmentation/output.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/M_Remapping/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/X_ImageSegmentation/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="24" column="25" lean-forward="true" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/A_SmoothingImages/demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="39" column="19" lean-forward="false" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/S_TemplateMatching/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="925">
+          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Y_GrabCut/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Z_BGSubtraction/__init__.py">
+    <entry file="file://$PROJECT_DIR$/_IO/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+        <state relative-caret-position="789">
+          <caret line="54" column="20" lean-forward="true" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="20" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_GRAPH/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_MISC/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="23" column="17" lean-forward="true" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
